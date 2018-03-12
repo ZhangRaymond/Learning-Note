@@ -1,0 +1,4 @@
+# Git ignore
+
+# folder
+.ipynb_checkpoints/
