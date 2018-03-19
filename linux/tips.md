@@ -17,3 +17,15 @@
 ```
 dos2unix a.sh
 ```
+## du 查看文件或文件夹大小
+```
+du                查看当前目录下各文件大小
+du -sh a/         查看a文件夹的总大小
+du -sh a.txt      查看a.txt大小
+du a.txt b.txt    查看多个文件大小
+```
+选项   
+```-s```或```--summarize```       &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 仅显示总计，只列出最后加总的值   
+```-h```或```--human-readable```   &nbsp;   &nbsp; 以K，M，G为单位，提高信息的可读性 
+
+ref：[每天一个linux命令（34）：du 命令](http://www.cnblogs.com/peida/archive/2012/12/10/2810755.html)
