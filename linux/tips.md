@@ -41,13 +41,13 @@ wget [参数] [URL地址]
 ```
 eg:
 1. 下载并保存在当前文件夹下   
-    wget http://www.minjieren.com/wordpress-3.1-zh_CN.zip   
+    ```wget http://www.minjieren.com/wordpress-3.1-zh_CN.zip```
 2. 下载后重命名为wordpress.zip，否则系统会自动命名为download.aspx?id=1080   
-    wget -O wordpress.zip http://www.minjieren.com/download.aspx?id=1080   
+    ```wget -O wordpress.zip http://www.minjieren.com/download.aspx?id=1080``` 
 3. 下载多个文件   
-    wget -i filelist.txt    
-    >下载链接文件filelist.txt内容：   
-    url1   
+    ```wget -i filelist.txt ```   
+    下载链接文件filelist.txt内容：   
+    > url1   
     url2   
     url3   
     url4   
