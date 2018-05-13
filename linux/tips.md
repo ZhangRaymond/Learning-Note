@@ -1,9 +1,36 @@
 
-## crond定时任务
-1. 列出定时任务    
+## crond 定时任务（循环）
+1. 列出定时任务    
 ``` crontab -l```  
 2. 编辑定时任务   
-```crontab -e```   
+```crontab -e```   
+## at 定时任务（一次性）
+在一个指定的时间执行一个指定任务，只能执行一次。  
+1. 三天后的下午 5 点锺执行 /bin/ls
+```
+[root@localhost ~]# at 5pm+3 days
+at> /bin/ls
+at> <EOT>
+job 7 at 2013-01-08 17:00
+[root@localhost ~]#
+```
+2. 用```atq```命令来查看系统没有执行工作任务   
+```
+[root@localhost ~]# atq
+8       2013-01-06 17:20 a root
+7       2013-01-08 17:00 a root
+[root@localhost ~]#
+```
+3. 删除已经设置的任务   
+```
+[root@localhost ~]# atq
+8       2013-01-06 17:20 a root
+7       2013-01-08 17:00 a root
+[root@localhost ~]# atrm 7
+[root@localhost ~]# atq
+8       2013-01-06 17:20 a root
+[root@localhost ~]#
+```
 
 ## ln命令 软连接 硬链接
 ## rsync 同步工具
